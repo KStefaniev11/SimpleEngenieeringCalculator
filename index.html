@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engineering Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🧮 Engineering Calculator</h1>
+
+    <select id="type">
+      <option value="area">Area (A = L × W)</option>
+      <option value="volume">Volume (V = L × W × H)</option>
+      <option value="flow">Flow Rate (Q = V / t)</option>
+    </select>
+
+    <input type="number" id="a" placeholder="Value A">
+    <input type="number" id="b" placeholder="Value B (optional)">
+    <input type="number" id="c" placeholder="Value C (optional)">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
